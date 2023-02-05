@@ -37,7 +37,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+6397867867565</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91-97867867565</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -53,16 +53,21 @@
     <div class="container d-flex justify-content-between">
 
       <div class="logo">
+        <img src="admin/assets/img/logo.png" alt="Logo" width="100" height="100" style="margin-bottom: -50px;">
+        <br>
+        <br>
+        
         <h1 class="text-light"><a href="index.html">CrowdFunding</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
+
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.php">Home</a></li>
+          <li><a class="active" href="index.php">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a  class="active" href="campaign-list.html">List of Campaign</a></li>
+          <li><a href="campaign-list.html">List of Campaign</a></li>
           <li><a href="Donator.php">Add Your Campaign</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="#">/</a></li>
@@ -74,23 +79,67 @@
     </div>
   </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(admin/assets/img/2.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h3>Help, Donate & <span>Fundraise</span></h3>
+              <h1>Your Contribution is Important</h1>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(admin/assets/img/1.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h3>Donate, Fundraise & <span>Volunteer</span></h3>
+              <p></p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+  </section><!-- End Hero -->
+
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="cta" class="cta">
       <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>List of Campaign</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Pricing</li>
-          </ol>
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3>Raise Your Hand</h3>
+            <p> </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Donate Now</a>
+          </div>
         </div>
 
       </div>
     </section>
-    
+
     <section id="pricing" class="pricing">
       <div class="container">
 
@@ -102,13 +151,15 @@
                 <center>
                   <img src="admin/assets/img/3.jpg" width="380"/></center>
               </div>
-              <h2 style="color:rgb(43, 35, 32);">Feeding the poor </h2>
+              <h2 style="color:rgb(43, 35, 32);">Feeding the Poors</h2>
               <div class="float-left">
                 <p><strong>Raised:</strong><small class="text-success"> RS.5,000.00</small></p>
                 <p><strong>Goal:</strong><small class="text-danger"> RS.50,000.00</small></p>
               </div>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Donate Now</a>
+                <br>
+                <a href="#" class="btn-buy">View Documents</a>
               </div>
             </div>
           </div>
@@ -126,6 +177,8 @@
               </div>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Donate Now</a>
+                <br>
+                <a href="#" class="btn-buy">View Documents</a>
               </div>
             </div>
           </div>
@@ -135,7 +188,7 @@
                 <center>
                   <img src="admin/assets/img/2.jpg" width="380"/></center>
               </div>
-              <h2 style="color:rgb(43, 35, 32);">On it differHelping Orphanages</h2>
+              <h2 style="color:rgb(43, 35, 32);">Helping Orphanages</h2>
               
               <div class="float-left">
                 <p><strong>Raised:</strong><small class="text-success"> RS.10,000.00</small></p>
@@ -143,6 +196,8 @@
               </div>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Donate Now</a>
+                <br>
+                <a href="#" class="btn-buy">View Documents</a>
               </div>
             </div>
           </div>
@@ -154,7 +209,6 @@
     </section>
 
   </main><!-- End #main -->
-
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

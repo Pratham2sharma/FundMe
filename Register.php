@@ -58,12 +58,11 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a  class="active" href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a  class="active" href="contact.html">Contact</a></li>
           <li><a href="campaign-list.html">List of Campaign</a></li>
           <li><a href="Donator.php">Add Your Campaign</a></li>
           <li><a href="login.html">Login</a></li>
@@ -72,7 +71,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
@@ -83,57 +81,56 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>About</h2>
+          <h2>Contact</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>About</li>
+            <li>Contact</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about-us" class="about-us">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
       <div class="container">
-
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right"></div>
-          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3 data-aos="fade-up">About Our Crowdfunging Platform</h3>
-              <p data-aos="fade-up">
-                We Raised funds For the People Really Needs the Money For Their Medical Expense or Any other Important Expense.
-              </p>
+    
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+            <h1>Register here</h1>
+            <form action="registeration.php" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="bx bx-receipt"></i>
-                  <h4>Verified Documents</h4>
-                  <p>We Verify All the important Documents related to the Fundraising or Donations, To Give our Users All the informations about the Donation they Are Donating</p>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="Username" placeholder="User Name" required>
                 </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Trusted Website</h4>
-                  <p>We are One of the most trusted CrowdFunding Website around the Globe</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bx-images"></i>
-                  <h4>Government Approved</h4>
-                  <p>We Comply Every Government norms and rules on our Website</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bx-shield"></i>
-                  <h4>Secure Funding</h4>
-                  <p>All the Donation given to the organization you choose for, will be kept safely</p>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
-            </div><!-- End .content-->
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="Number" id="Number" placeholder="Your Number" required>
+              </div>
+            
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="Password" placeholder="Password" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="Confirm_Password" placeholder="Confirm Password" required>
+              </div>
+
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">You are Succefully Registered. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Submit</button></div>
+            </form>
           </div>
+
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
-
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
