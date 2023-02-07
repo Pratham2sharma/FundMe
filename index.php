@@ -25,6 +25,18 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -64,12 +76,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index.php">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="campaign-list.html">List of Campaign</a></li>
+        <li><a href="index.php">Home</a></li>
+          <li><a  class="active" href="about.php">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="campaign-list.php">List of Campaign</a></li>
           <li><a href="Donator.php">Add Your Campaign</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.php">Login</a></li>
           <li><a href="#">/</a></li>
           <li><a href="Register.php">Register</a></li>
         </ul>
@@ -158,10 +170,34 @@
               </div>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Donate Now</a>
-                <br>
-                <a href="#" class="btn-buy">View Documents</a>
+               
               </div>
             </div>
+            <div class="container" style="margin-left: 60px;">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-buy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    View Documents
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Documents</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Documents Here
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="box" data-aos="fade-right">
@@ -177,10 +213,34 @@
               </div>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Donate Now</a>
-                <br>
-                <a href="#" class="btn-buy">View Documents</a>
+                
               </div>
             </div>
+            <div class="container" style="margin-left: 60px;">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-buy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    View Documents
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Documents</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Documents Here
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="box" data-aos="fade-right">
@@ -196,12 +256,35 @@
               </div>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Donate Now</a>
-                <br>
-                <a href="#" class="btn-buy">View Documents</a>
               </div>
             </div>
-          </div>
+            <div class="container" style="margin-left: 60px;">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-buy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    View Documents
+                  </button>
 
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Documents</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Documents Here
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+
+          </div>
+          
 
         </div>
 
@@ -223,6 +306,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+ 
 
 </body>
 

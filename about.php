@@ -57,9 +57,11 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
+
+      
       <nav id="navbar" class="navbar">
         <ul>
-        <li><a href="index.php">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a  class="active" href="about.php">About</a></li>
           <li><a href="contact.php">Contact</a></li>
           <li><a href="campaign-list.php">List of Campaign</a></li>
@@ -81,80 +83,59 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>List of Campaign</h2>
+          <h2>About</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Pricing</li>
+            <li>About</li>
           </ol>
         </div>
 
       </div>
-    </section>
-    
-    <section id="pricing" class="pricing">
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
       <div class="container">
 
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-right">
-              <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                <center>
-                  <img src="admin/assets/img/3.jpg" width="380"/></center>
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-up">About Our Crowdfunging Platform</h3>
+              <p data-aos="fade-up">
+                We Raised funds For the People Really Needs the Money For Their Medical Expense or Any other Important Expense.
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Verified Documents</h4>
+                  <p>We Verify All the important Documents related to the Fundraising or Donations, To Give our Users All the informations about the Donation they Are Donating</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Trusted Website</h4>
+                  <p>We are One of the most trusted CrowdFunding Website around the Globe</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-images"></i>
+                  <h4>Government Approved</h4>
+                  <p>We Comply Every Government norms and rules on our Website</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-shield"></i>
+                  <h4>Secure Funding</h4>
+                  <p>All the Donation given to the organization you choose for, will be kept safely</p>
+                </div>
               </div>
-              <h2 style="color:rgb(43, 35, 32);">Feeding the poor </h2>
-              <div class="float-left">
-                <p><strong>Raised:</strong><small class="text-success"> RS.5,000.00</small></p>
-                <p><strong>Goal:</strong><small class="text-danger"> RS.50,000.00</small></p>
-              </div>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Donate Now</a>
-              </div>
-            </div>
+            </div><!-- End .content-->
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-right">
-              <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                <center>
-                  <img src="admin/assets/img/1.jpg" width="380"/></center>
-              </div>
-              <h2 style="color:rgb(43, 35, 32);">Come forward to help Disabled People</h2>
-              
-              <div class="float-left">
-                <p><strong>Raised:</strong><small class="text-success"> RS.9,000.00</small></p>
-                <p><strong>Goal:</strong><small class="text-danger"> RS.90,000.00</small></p>
-              </div>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Donate Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-right">
-              <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                <center>
-                  <img src="admin/assets/img/2.jpg" width="380"/></center>
-              </div>
-              <h2 style="color:rgb(43, 35, 32);">On it differHelping Orphanages</h2>
-              
-              <div class="float-left">
-                <p><strong>Raised:</strong><small class="text-success"> RS.10,000.00</small></p>
-                <p><strong>Goal:</strong><small class="text-danger"> RS.100,000.00</small></p>
-              </div>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Donate Now</a>
-              </div>
-            </div>
-          </div>
-
-
         </div>
 
       </div>
-    </section>
+    </section><!-- End About Us Section -->
+
 
   </main><!-- End #main -->
-
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

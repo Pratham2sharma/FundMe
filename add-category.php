@@ -153,12 +153,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">New Campaign</h1>
+            <h1 class="m-0 text-dark">New Category</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Campaign</li>
+              <li class="breadcrumb-item active">Category</li>
             </ol>
           </div>
         </div>
@@ -174,48 +174,24 @@
             <!-- jquery validation -->
             <div class="card card-success">
               <!-- form start -->
-              <form action="addCampaign.php" method="post" role="form" id="quickForm">
+              <form role="form" id="quickForm">
                 <div class="card-body">
                   <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-8 offset-md-2">
                   <div class="form-group">
-                    <label>Category</label>
-                    <input type="text" name="lname" class="form-control" id="Category" placeholder="Category">
+                    <label>Category Name</label>
+                    <input type="text" name="number" class="form-control" placeholder="Category Name">
                   </div></div>
-                  <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Campaign Name</label>
-                    <input type="text" name="fname" class="form-control" id="CampaignName" placeholder="Campaign Name">
-                  </div></div>
-                  <div class="col-md-4">
+                  <div class="col-md-8 offset-md-2">
                   <div class="form-group">
                     <label>Description</label>
-                    <input type="text" name="mname" class="form-control" id="Desciption2" placeholder="Description">
-                  </div>
-                  </div>
-                  <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Target Amount</label>
-                    <input type="number" name="email" class="form-control" id="TargetAmount" placeholder="ex. 20,000.00">
-                  </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Deadline</label>
-                      <input type="date" name="profile" id="Deadline" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Banner </label>
-                      <input type="file" name="identity" id="Banner" class="form-control">
-                    </div>
-                  </div>
-                  </div>
+                    <textarea  class="form-control" name="description" placeholder="ex. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet"></textarea>
+                  </div></div>
+
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                <button type="submit" class="btn btn-primary" style="font-coloe:white;"><a href="campaign-list.php">Submit</a></button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
             </div>
@@ -248,7 +224,9 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
-<!-- ./wrapper --><!-- jQuery -->
+<!--wrapper -->
+
+  <!-- jQuery -->
   <script src="assets/plugins/jquery/jquery.min.js"></script>
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <script>
@@ -259,13 +237,17 @@
   <!-- overlayScrollbars -->
   <script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="assets/js/adminlte.js"></script>  
-<!-- jquery-validation -->
-<script src="assets/plugins/jquery-validation/jquery.validate.min.js"></script>
-<script src="assets/plugins/jquery-validation/additional-methods.min.js"></script>
-<!-- AdminLTE App -->
-<script src="assets/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="assets/dist/js/demo.js"></script>
+  <script src="assets/js/adminlte.js"></script>   
+   <!-- DataTables  & Plugins -->
+   <script src="assets/tables/datatables/jquery.dataTables.min.js"></script>
+   <script src="assets/tables/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+   <script src="assets/tables/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+   <script src="assets/tables/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script>
+      $(function () {
+         $("#example1").DataTable();
+      });
+   </script>
 </body>
+
 </html>

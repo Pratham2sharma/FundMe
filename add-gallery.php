@@ -153,12 +153,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">New Campaign</h1>
+            <h1 class="m-0 text-dark">New Image</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Campaign</li>
+              <li class="breadcrumb-item active">Image</li>
             </ol>
           </div>
         </div>
@@ -174,48 +174,33 @@
             <!-- jquery validation -->
             <div class="card card-success">
               <!-- form start -->
-              <form action="addCampaign.php" method="post" role="form" id="quickForm">
+              <form action="gallery_back.php" method="post" role="form" id="quickForm">
                 <div class="card-body">
                   <div class="row">
                   <div class="col-md-4">
                   <div class="form-group">
-                    <label>Category</label>
-                    <input type="text" name="lname" class="form-control" id="Category" placeholder="Category">
-                  </div></div>
-                  <div class="col-md-4">
-                  <div class="form-group">
                     <label>Campaign Name</label>
-                    <input type="text" name="fname" class="form-control" id="CampaignName" placeholder="Campaign Name">
-                  </div></div>
+                    <input type="text" name="fname" class="form-control" placeholder="Campaign Name" id="CampaignName">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                <div class="form-group">
+                  <label>Image</label>
+                  <input type="file" name="lname" class="form-control" placeholder="Category" id="images">
+                </div>
+              </div>
                   <div class="col-md-4">
                   <div class="form-group">
                     <label>Description</label>
-                    <input type="text" name="mname" class="form-control" id="Desciption2" placeholder="Description">
+                    <input type="text" name="mname" class="form-control" placeholder="Description" id="Description3">
                   </div>
                   </div>
-                  <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Target Amount</label>
-                    <input type="number" name="email" class="form-control" id="TargetAmount" placeholder="ex. 20,000.00">
-                  </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Deadline</label>
-                      <input type="date" name="profile" id="Deadline" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Banner </label>
-                      <input type="file" name="identity" id="Banner" class="form-control">
-                    </div>
-                  </div>
+
                   </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                <button type="submit" class="btn btn-primary" style="font-coloe:white;"><a href="campaign-list.php">Submit</a></button>
+                  <button type="submit" class="btn btn-primary" href="index.php">Submit</button>
                 </div>
               </form>
             </div>

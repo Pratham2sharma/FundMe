@@ -57,6 +57,7 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
+
       <nav id="navbar" class="navbar">
         <ul>
         <li><a href="index.php">Home</a></li>
@@ -70,7 +71,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
@@ -81,80 +81,82 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>List of Campaign</h2>
+          <h2>Contact</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Pricing</li>
+            <li><a href="index.php">Home</a></li>
+            <li>Contact</li>
           </ol>
         </div>
 
       </div>
-    </section>
-    
-    <section id="pricing" class="pricing">
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
       <div class="container">
 
-        <div class="row">
+        <div class="row justify-content-center" data-aos="fade-up">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-right">
-              <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                <center>
-                  <img src="admin/assets/img/3.jpg" width="380"/></center>
-              </div>
-              <h2 style="color:rgb(43, 35, 32);">Feeding the poor </h2>
-              <div class="float-left">
-                <p><strong>Raised:</strong><small class="text-success"> RS.5,000.00</small></p>
-                <p><strong>Goal:</strong><small class="text-danger"> RS.50,000.00</small></p>
-              </div>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Donate Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-right">
-              <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                <center>
-                  <img src="admin/assets/img/1.jpg" width="380"/></center>
-              </div>
-              <h2 style="color:rgb(43, 35, 32);">Come forward to help Disabled People</h2>
-              
-              <div class="float-left">
-                <p><strong>Raised:</strong><small class="text-success"> RS.9,000.00</small></p>
-                <p><strong>Goal:</strong><small class="text-danger"> RS.90,000.00</small></p>
-              </div>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Donate Now</a>
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>Parul University,Vadodara<br>Gujarat , India</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91-93245671246<br>+91-97865435321</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-right">
-              <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
-                <center>
-                  <img src="admin/assets/img/2.jpg" width="380"/></center>
-              </div>
-              <h2 style="color:rgb(43, 35, 32);">On it differHelping Orphanages</h2>
-              
-              <div class="float-left">
-                <p><strong>Raised:</strong><small class="text-success"> RS.10,000.00</small></p>
-                <p><strong>Goal:</strong><small class="text-danger"> RS.100,000.00</small></p>
-              </div>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Donate Now</a>
-              </div>
-            </div>
+
           </div>
 
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+            <form action="contact_back.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="Fname" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="Email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="Subject1" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" id="Message1" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
 
         </div>
 
       </div>
-    </section>
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

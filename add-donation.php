@@ -153,12 +153,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">New Campaign</h1>
+            <h1 class="m-0 text-dark">New Members</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Campaign</li>
+              <li class="breadcrumb-item active">Members</li>
             </ol>
           </div>
         </div>
@@ -174,48 +174,66 @@
             <!-- jquery validation -->
             <div class="card card-success">
               <!-- form start -->
-              <form action="addCampaign.php" method="post" role="form" id="quickForm">
+              <form role="form" id="quickForm">
                 <div class="card-body">
                   <div class="row">
                   <div class="col-md-4">
                   <div class="form-group">
-                    <label>Category</label>
-                    <input type="text" name="lname" class="form-control" id="Category" placeholder="Category">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" class="form-control" placeholder="Last Name">
                   </div></div>
                   <div class="col-md-4">
                   <div class="form-group">
-                    <label>Campaign Name</label>
-                    <input type="text" name="fname" class="form-control" id="CampaignName" placeholder="Campaign Name">
+                    <label>First Name</label>
+                    <input type="text" name="fname" class="form-control" placeholder="First Name">
                   </div></div>
                   <div class="col-md-4">
                   <div class="form-group">
-                    <label>Description</label>
-                    <input type="text" name="mname" class="form-control" id="Desciption2" placeholder="Description">
+                    <label>Middle Name</label>
+                    <input type="text" name="mname" class="form-control" placeholder="Middle Name">
+                  </div>
+                  </div>
+                  <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Address</label>
+                    <textarea  class="form-control" name="address" placeholder="ex. Manggahan, Pasig City, Manila"></textarea>
                   </div>
                   </div>
                   <div class="col-md-4">
                   <div class="form-group">
-                    <label>Target Amount</label>
-                    <input type="number" name="email" class="form-control" id="TargetAmount" placeholder="ex. 20,000.00">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="ex. email@gmail.com">
                   </div>
                   </div>
                   <div class="col-md-4">
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Deadline</label>
-                      <input type="date" name="profile" id="Deadline" class="form-control">
+                      <label for="exampleInputPassword1">Profile</label>
+                      <input type="file" name="profile" class="form-control">
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Banner </label>
-                      <input type="file" name="identity" id="Banner" class="form-control">
+                      <label for="exampleInputPassword1">Proof of Identity </label>
+                      <input type="file" name="identity" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Username </label>
+                      <input type="text" name="username" class="form-control" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password </label>
+                      <input type="password" name="password" class="form-control" placeholder="***********">
                     </div>
                   </div>
                   </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                <button type="submit" class="btn btn-primary" style="font-coloe:white;"><a href="campaign-list.php">Submit</a></button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
             </div>
@@ -267,5 +285,89 @@
 <script src="assets/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="assets/dist/js/demo.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  $.validator.setDefaults({
+    submitHandler: function () {
+      alert( "Form successful submitted!" );
+    }
+  });
+  $('#quickForm').validate({
+    rules: {
+      lname: {
+        required: true,
+      },
+      fname: {
+        required: true,
+      },
+      mname: {
+        required: true,
+      },
+      address: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      identity: {
+        required: true,
+      },
+      username: {
+        required: true,
+      },
+      password: {
+        required: true,
+        minlength: 5
+      },
+      profile: {
+        required: true,
+      },
+    },
+    messages: {
+      lname: {
+        required: "Please enter last name"
+      },
+      fname: {
+        required: "Please enter first name"
+      },
+      mname: {
+        required: "Please enter middle name"
+      },
+      address: {
+        required: "Please enter complete address"
+      },
+      email: {
+        required: "Please enter a email address",
+        email: "Please enter a vaild email address"
+      },
+      identity: {
+        required: "Please upload proof of identity"
+      },
+      username: {
+        required: "Please enter a username"
+      },
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      profile: {
+        required: "Please choose profile"
+      }
+    },
+    errorElement: 'span',
+    errorPlacement: function (error, element) {
+      error.addClass('invalid-feedback');
+      element.closest('.form-group').append(error);
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass('is-invalid');
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass('is-invalid');
+    }
+  });
+});
+</script>
 </body>
 </html>

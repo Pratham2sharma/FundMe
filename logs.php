@@ -146,109 +146,91 @@
       </div>
       <!-- /.sidebar -->
     </aside>
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">New Campaign</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Campaign</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- left column -->
-          <div class="col-md-12">
-            <!-- jquery validation -->
-            <div class="card card-success">
-              <!-- form start -->
-              <form action="addCampaign.php" method="post" role="form" id="quickForm">
-                <div class="card-body">
-                  <div class="row">
-                  <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Category</label>
-                    <input type="text" name="lname" class="form-control" id="Category" placeholder="Category">
-                  </div></div>
-                  <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Campaign Name</label>
-                    <input type="text" name="fname" class="form-control" id="CampaignName" placeholder="Campaign Name">
-                  </div></div>
-                  <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Description</label>
-                    <input type="text" name="mname" class="form-control" id="Desciption2" placeholder="Description">
+      <div class="content-wrapper">
+         <div class="content-header">
+            <div class="container-fluid">
+               <div class="row mb-2">
+                  <div class="col-sm-6">
+                     <h1 class="m-0 text-dark"><span class="fa fa-file"></span> Logs</h1>
                   </div>
+                  <div class="col-sm-6">
+                     <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Logs</li>
+                     </ol>
                   </div>
-                  <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Target Amount</label>
-                    <input type="number" name="email" class="form-control" id="TargetAmount" placeholder="ex. 20,000.00">
-                  </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Deadline</label>
-                      <input type="date" name="profile" id="Deadline" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Banner </label>
-                      <input type="file" name="identity" id="Banner" class="form-control">
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                <button type="submit" class="btn btn-primary" style="font-coloe:white;"><a href="campaign-list.php">Submit</a></button>
-                </div>
-              </form>
+               </div>
             </div>
-            <!-- /.card -->
+         </div>
+         <section class="content">
+            <div class="container-fluid">
+               <div class="card card-info elevation-2">
+                  <br>
+                  <div class="col-md-12 table-responsive">
+                     <table id="example1" class="table table-bordered table-hover">
+                        <thead class="btn-cancel">
+                           <tr>
+                              <th>Campaign Name</th>
+                              <th>Total Amount</th>
+                              <th>Date bof Approval</th>
+                              <th>Requested By</th>
+                              <th>Status</th>
+                              <th>Remarks</th>
+                              <th>Action</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                             <td>Campaign 1</td>
+                             <td>Php20,000</td>
+                             <td>Oct 17, 2021</td>
+                             <td>John Doe</td>
+                             <td><span class="badge bg-danger">withdrawn</span></td>
+                             <td>Remarks</td>
+                             <td class="text-right">
+                                <a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#edit"><i
+                                      class="fa fa-edit"></i></a>
+                                <a class="btn btn-sm btn-danger" href="#" data-toggle="modal" data-target="#delete"><i
+                                      class="fa fa-trash-alt"></i></a>
+                             </td>
+                          </tr>
+                          <tr>
+                             <td>Campaign 2</td>
+                             <td>Php50,000</td>
+                             <td>Oct 16, 2021</td>
+                             <td>John Doe</td>
+                             <td><span class="badge bg-danger">withdrawn</span></td>
+                             <td>Remarks</td>
+                             <td class="text-right">
+                                <a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#edit"><i
+                                      class="fa fa-edit"></i></a>
+                                <a class="btn btn-sm btn-danger" href="#" data-toggle="modal" data-target="#delete"><i
+                                      class="fa fa-trash-alt"></i></a>
+                             </td>
+                          </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
             </div>
-          <!--/.col (left) -->
-          <!-- right column -->
-          <div class="col-md-6">
-
-          </div>
-          <!--/.col (right) -->
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.4
-    </div>
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-    reserved.
-  </footer>
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper --><!-- jQuery -->
+         </section>
+      </div>
+   </div>
+   <div id="delete" class="modal animated rubberBand delete-modal" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-body text-center">
+               <img src="assets/img/sent.png" alt="" width="50" height="46">
+               <h3>Are you sure want to delete this Operator?</h3>
+               <div class="m-t-20">
+                  <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+                  <button type="submit" class="btn btn-danger">Delete</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+  <!-- jQuery -->
   <script src="assets/plugins/jquery/jquery.min.js"></script>
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <script>
@@ -259,13 +241,17 @@
   <!-- overlayScrollbars -->
   <script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="assets/js/adminlte.js"></script>  
-<!-- jquery-validation -->
-<script src="assets/plugins/jquery-validation/jquery.validate.min.js"></script>
-<script src="assets/plugins/jquery-validation/additional-methods.min.js"></script>
-<!-- AdminLTE App -->
-<script src="assets/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="assets/dist/js/demo.js"></script>
+  <script src="assets/js/adminlte.js"></script>   
+   <!-- DataTables  & Plugins -->
+   <script src="assets/tables/datatables/jquery.dataTables.min.js"></script>
+   <script src="assets/tables/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+   <script src="assets/tables/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+   <script src="assets/tables/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script>
+      $(function () {
+         $("#example1").DataTable();
+      });
+   </script>
 </body>
+
 </html>
