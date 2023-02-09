@@ -71,12 +71,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index.php">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="campaign-list.html">List of Campaign</a></li>
+        <li><a href="index.php">Home</a></li>
+          <li><a  class="active" href="about.php">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="campaign-list.php">List of Campaign</a></li>
           <li><a href="Donator.php">Add Your Campaign</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.php">Login</a></li>
           <li><a href="#">/</a></li>
           <li><a href="Register.php">Register</a></li>
         </ul>
@@ -85,8 +85,11 @@
 
     </div>
   </header><!-- End Header -->
-
-  <h1 style="margin-top: 20px; text-align: center;">Add Your Campaign</h1>
+  <div class="banner" style=" background-image: url(assets/img/social2.jpg); height: 200px;">
+  <div class ="container">
+  <h1 style="text-align: center; font-family: sans serif; margin-top:20px; ">Add Your Campaign</h1>
+   </div>
+   </div>
   <form action="newCampaign.php" method="post" class="row g-3" style="border: 2px solid black; margin-top: 20px; margin-left: 20px; margin-right: 20px; background-color: rgb(144, 214, 190);">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label" style="font-weight: bold; font-family: sans-serif;">Email</label>
@@ -129,6 +132,11 @@
             <label for="description" class="form-label" style="font-weight: bold; font-family: sans-serif;">Description</label>
             <textArea class="form-control" id="description1" placeholder="Problem you want To solve with Donations"></textArea>
         </div>
+        <br>
+        <div class="col-md-6">
+      <label for="inputCity" class="form-label" style="font-weight: bold; font-family: sans-serif;">Amount</label>
+      <input type="text" class="form-control" id="City" placeholder="Rs 100000">
+       </div>
         <br>
         <div class="input-group mb-3">
             <label class="input-group-text" for="inputGroupFile01" style="font-weight: bold;" >Upload Documents</label>
